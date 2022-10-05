@@ -1,0 +1,224 @@
+{
+  "basics": {
+    "name": "Michal Lopasovsky",
+    "label": "Technical Artist",
+    "picture": "../images/giphy.gif",
+    "email": "lopasovsky@proton.me",
+    "phone": "",
+    "website": "https://lopasovsky.github.io",
+    "summary": "During the past 10+ years in game development I had a opportunity to work with very talented people from whom I learned a lot. <br>
+    I'm able to recognize necessary tasks and manage them my own but I'm very excited to work with a team of people. My experience is in building art pipelines, improving in-house editor tools.<br>
+    I have many interests in and outside of the game development. People describe me as T-shaped person, I have both depth and breadth in my skills.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
+    },
+    "profiles": [
+      {
+        "network": "github",
+        "username": "lopasovsky",
+        "url": "http://github.com/lopasovsky"
+      },
+      {
+        "network": "linkedin",
+        "username": "lopasovsky",
+        "url": "https://www.linkedin.com/in/michal-lopa%C5%A1ovsk%C3%BD-7145a422/"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Skills",
+      "level": "",
+      "keywords": [
+        "Game development",
+        "Environment art",
+        "Technical art",
+        "Building art pipelines and tools",
+        "City and Level design",
+        "PBR Texturing",
+        "3D modeling"
+      ]
+    },
+    {
+      "name": "Software",
+      "level": "Profecient",
+      "keywords": [
+        "3DS max",
+        "Blender",
+        "Krita",
+        "Photoshop",
+        "Unity3D",
+        "Helix - Perforce",
+        "Shotgun",
+        "Confluence",
+      ]
+    },
+    {
+      "name": "Languages & scripting",
+      "level": "",
+      "keywords": [
+        "C#",
+        "Python",
+        "JavaScript"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Secondary School of Electrical Engineering",
+      "area": "Computer information systems field",
+      "studyType": "",
+      "startDate": "2003",
+      "endDate": "2007",
+      "gpa": "",
+      "courses": [
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Self-employed",
+      "position": "Indie game developer",
+      "website": "",
+      "startDate": "2021-01",
+      "endDate": "Present",
+      "summary": "Unannounced VR project | PC",
+      "highlights": [
+        "Bulding Streaming, Audio, Weather systems.",
+        "Building physically based VR player rig.",
+        "Creation of workflow tools: FBX mesh exporter - Mesh exporting from Blender3D, Texture exporter - channel packing and data exporting from Krita.",
+        "Unity3D tools: Scene selector - load/unload of multiple scenes, AssetPostProcessor - static collisions automation, static flags automation.",
+        "Unity3D Shader Graph - shader creation.",
+        "Creation of vfx effects in unity's VFX Graph.",
+      ]
+    },
+    {
+      "company": "Hangar 13",
+      "position": "Senior Technical Artist",
+      "website": "",
+      "startDate": "2016-04",
+      "endDate": "2018-05",
+      "summary": "Unannounced project | PC, -, -",
+      "highlights": [
+        "Researching and writing a design document about 'Streaming system' for in-house 'Engine' including in-house 'Editor' workflow for Art and Design departments.",
+        "Designing 'World creation pipeline' for in-house 'Editor'.",
+        "Preparing budget quotas for multiple departments to fit into overall budget depending on the platform.",
+        "Support for 'FBX exporter' workflow.",
+        "Training environment artists and lightning artists of newly developed workflows and pipelines.",
+      ]
+    },
+    {
+      "company": "2K Novato",
+      "position": "Technical Artist",
+      "website": "https://en.wikipedia.org/wiki/Mafia_III",
+      "startDate": "2014-12",
+      "endDate": "2016-05",
+      "summary": "Mafia 3 | PC, Xbox One, PS4",
+      "highlights": [
+        "Streaming system - data maintenance",
+        "Environment data optimizations (mesh optimization, texture atlas optimization and texture compression optimization)",
+        "Development of standards together with Design department and enforcement of such standards.",
+        "Dynamic objects creation (destructible objects by vehicle or player and dynamic objects with physics) and their optimization.",
+        "Game performance monitoring.",
+        "In-house 'Editor' support for Art, Lighting and Design department.",
+      ]
+    },
+    {
+      "company": "2K Czech",
+      "position": "Environment Artist",
+      "website": "https://en.wikipedia.org/wiki/Mafia_III",
+      "startDate": "2011-02",
+      "endDate": "2014-12",
+      "summary": "Mafia 3 | PC, Xbox One, PS4",
+      "highlights": [
+        "Modelling and texturing any kind of environmental geometry. Designing and building complete levels and city districts.",
+        "Modelling and texturing various props, dynamic objects and environment assets.",
+        "Photogrammetry",
+        "Streaming system - data maintenance",
+        "Research, building and experimenting with photogrammetry.",
+      ]
+    },
+    {
+      "company": "2K Czech",
+      "position": "Environment Artist",
+      "website": "https://en.wikipedia.org/wiki/Mafia_II",
+      "startDate": "2010-03",
+      "endDate": "2011-02",
+      "summary": "Mafia 2 | PC, Xbox 360, PS3",
+      "highlights": [
+        "Modelling and texturing various props and environment assets.",
+        "Beautifying ingame models, bug fixing and optimization to achieve required performance.",
+      ]
+    },
+    {
+      "company": "2K Czech",
+      "position": "3D Artist",
+      "website": "https://en.wikipedia.org/wiki/Top_Spin_4",
+      "startDate": "2010-03",
+      "endDate": "2011-02",
+      "summary": "Top Spin 4 | Xbox 360, PS3",
+      "highlights": [
+        "Creating art assets for the real-time simulation, modelling and texturing.",
+      ]
+    },
+    {
+      "company": "2K Czech",
+      "position": "Environment Artist",
+      "website": "http://www.2k.com",
+      "startDate": "2009-02",
+      "endDate": "2010-02",
+      "summary": "Mafia 2 | PC, Xbox 360, PS3",
+      "highlights": [
+        "Building realistic looking environments.",
+        "Modelling and texturing various props and environment assets."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Follow up on Linkedin profile.",
+      "reference": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Technology",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Space",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Neuroscience",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Large energy storage solutions",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Biking - EMTB",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "Motorcycles",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "DIY",
+      "keywords": [
+      ]
+    }
+  ],
+}
