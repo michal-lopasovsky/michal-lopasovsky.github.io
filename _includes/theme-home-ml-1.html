@@ -1,14 +1,10 @@
-<!-- Home page design with small circular image bisecting card. -->
-
 {% assign essay_pages = site.pages | where: "type", "essay"  | where_exp: "page", "page.draft != true" %}
 {% assign project_pages = site.pages | where: "type", "project" | where_exp: "page", "page.draft != true" %}
 {% assign num_essays = essay_pages.size %}
 {% assign num_projects = project_pages.size %}
 
-<div style="height: 100%" class="ui equal width three column center aligned grid">
+<div style="height: 100%" class="ui equal width two column center aligned grid">
     <div class="stretched row">
-        <!-- <div style="background-image: url({{ site.data.bio.basics.picture }}); background-repeat: no-repeat; background-size:100%, 100%" class="black column"></div> -->
-        <div style="background-repeat: no-repeat; background-size:100%, 100%" class="black column"></div>
 
         <div class="middle aligned column">
             <div style="position: relative; z-index: 1" class="ui fluid centered small circular image">
@@ -20,11 +16,6 @@
             </h1>
 
                 <p style="text-align: left; margin-bottom:100px; margin-top: 100px; margin-left:25px; margin-right:25px" class="">{{ site.data.bio.basics.summary }}</p>
-            <!-- <p style="font-style: italic; font-size:80%">"For eternally and always there is only now, one and the same now, the present is the only thing that has no end." -Alan Watts</p>
-            <p style="font-style: italic; font-size:80%">"Life isn't about finding your passion. It's about having an adventure." -Unnamed Quora user</p>
-            <p style="font-style: italic; font-size:80%">"Happiness is not a destination. It's a way of life." -Unnamed Quora user</p>
-            <p style="font-style: italic; font-size:80%">"Let your smile change the world. Don't let the world change your smile." -Unknown</p>
-            <p style="font-style: italic; font-size:80%">"I mean, they say you die twice. One time when you stop breathing and a second time, a little bit later on, when somebody says your name for the last time." -Banksy</p> -->
         </div>
 
         <div class="black column">
