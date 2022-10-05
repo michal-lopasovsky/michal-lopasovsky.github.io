@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>
+    
+    Michal Lopasovsky | Technical Artist
+  </title>
+
+  <!-- Load Javascript and CSS for Semantic UI -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/css/semantic-ui/semantic.min.js"></script>
+  <link rel="stylesheet" href="/css/semantic-ui/semantic.min.css">
+
+  <!-- Load Techfolio CSS customizations -->
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet-default.css">
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet-customizations.css">
+
+  <link rel="stylesheet" type="text/css" href="/css/print-default.css" media="print">
+  <link rel="stylesheet" type="text/css" href="/css/print-customizations.css" media="print">
+
+  <!-- Load a rouge theme from the sample themes in css/rouge.
+       See https://benhur07b.github.io/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html
+  -->
+  <link rel="stylesheet" type="text/css" href="/css/rouge/.css">
+
+  <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+</head>
+
+
+  <body>
+    <!-- Used by all builtin themes. Now we list number of essays and projects. -->
+
+<!--  -->
+
+<!--  -->
+
+
+<div class="nonprintable">
+  <nav class="ui stackable menu">
+    <a href="/" class="brand item">
+      <img class="ui avatar image" src="../images/giphy.gif"><span>Michal Lopasovsky</span>
+    </a>
+    <!--  -->
+    <a href="/bio" class="  item">Resume</a>
+    
+    <a href="/projects" class="  active item">Portfolio <!-- (6)--></a>
+    
+  </nav>
+</div>
+
+<div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
+ <h1></h1>
+ <div class="ui embed" data-source="vimeo" data-id="756645664"></div>
+
+<h2 id="shaders---water--puddle">SHADERS - WATER / PUDDLE</h2>
+
+<h3 id="about-the-project">About the project</h3>
+<p>This shader was made while I was experimenting and trying to create my own planar reflections in Unity3D. Although this shader is very simple, it does uses simple cubemap reflections. I decided to go with it, since it’s ment for my VR game and good performance is the key.</p>
+
+<hr />
+
+<h3 id="description">Description</h3>
+<p>Shader uses one small tileable normal map texture that is used for distortion of the puddle surface and one small generic noise texture RGB (each channel with different noise) which is applied on the edges where puddle mesh gets into contact with other static mesh surfaces.<br /><br />
+I’m calculating a “depth” of the puddle by dividing <em>Screen Depth</em> and world space depth of the pixel (handy “W” component of the Unity’s <em>Screen Position</em>). I applied an offset (by time) to distortion texture to create movement - an illusion of a movement of the surface.</p>
+
+<hr />
+
+<div class="ui huge rounded image">
+  <img class="ui image" src="/images/shader_puddle_graph.jpg" />
+</div>
+<p><em>right-click on image -&gt; “Open in new tab” for full graph</em></p>
+
+<hr />
+
+</div>
+
+
+    <!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
+
+<script>
+  $('.ui.embed').embed();
+</script>
+
+
+  </body>
+
+</html>
