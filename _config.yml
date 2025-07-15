@@ -24,7 +24,7 @@ exclude:
   - LICENSE
   - README.md
 include:
-  - .nojekyll
+  #- .nojekyll
   - _data
 plugins:
   - jekyll-gist
