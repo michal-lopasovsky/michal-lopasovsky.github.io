@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>
+    
+    Michal Lopasovsky | Technical Artist
+  </title>
+
+  <!-- Load Javascript and CSS for Semantic UI -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/css/semantic-ui/semantic.min.js"></script>
+  <link rel="stylesheet" href="/css/semantic-ui/semantic.min.css">
+
+  <!-- Load Techfolio CSS customizations -->
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet-default.css">
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet-customizations.css">
+
+  <link rel="stylesheet" type="text/css" href="/css/print-default.css" media="print">
+  <link rel="stylesheet" type="text/css" href="/css/print-customizations.css" media="print">
+
+  <!-- Load a rouge theme from the sample themes in css/rouge.
+       See https://benhur07b.github.io/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html
+  -->
+  <link rel="stylesheet" type="text/css" href="/css/rouge/.css">
+
+  <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+</head>
+
+
+  <body>
+    <!-- Used by all builtin themes. Now we list number of essays and projects. -->
+
+<!--  -->
+
+<!--  -->
+
+
+<div class="nonprintable">
+  <nav class="ui stackable menu">
+    <a href="/" class="brand item">
+      <img class="ui avatar image" src="../images/giphy.gif"><span>Michal Lopasovsky</span>
+    </a>
+    <!--  -->
+    <a href="/bio" class="  item">Resume</a>
+    
+    <a href="/projects" class="  active item">Portfolio <!-- (6)--></a>
+    
+  </nav>
+</div>
+
+<div style="margin-top: 20px; margin-bottom: 20px" class="ui text container">
+ <h1></h1>
+ <div class="ui embed" data-source="vimeo" data-id="716392895"></div>
+
+<h2 id="krita-exporter">KRITA EXPORTER</h2>
+
+<h3 id="about-the-project">About the project</h3>
+
+<p>Although in some cases I’m using material painting programs such as Quixel, SP, etc., I decided to use Krita for most of my textures. Therefore I needed a fast way to export individual Krita Paint Layers as different RGBA channels.
+My plugin prepares all required <strong>Paint Layers</strong> and <strong>Groups</strong> for specific type of RGBA textures. Currently for my project I’m using custom channel mixing to achieve visuals I’m going for without sacrificing performance.
+Exporter manages export of <em>Diffuse, Mask, Detail mask</em> textures.</p>
+
+<p>I was considering exporting textures directly to DDS format but since Unity3D has quite okay-ish UI for granular adjustments I decided against it. I might reconsider it for my next project to have even lower level of control.<br /><br />
+I might add some additional ‘checks’ which will be triggered during export to make this plugin more user-friendly. For example notifying user if they try to export textures with different template than the one they originally set. (i.e. trying to export <em>Diffuse</em> but current layout is ready to be exported as <em>Mask texture</em>.)</p>
+
+<hr />
+
+<h3 id="base-functionality">Base functionality</h3>
+
+<p>Plugin has two types of buttons: <em>Create new Layers</em> and <em>Export</em>.
+Create new Layers: While empty document this button creates a new <em>Paint Layers</em> and categorize them to proper <em>Layer Groups</em> with predefined names.
+Export: Exports specific type of texture - <em>Diffuse, Mask, Detail mask</em>.</p>
+
+<div class="ui right large floated rounded image">
+  <img class="ui image" src="/images/krita_exporter_ui.jpg" />
+</div>
+
+<p><ins>… : </ins><span style="color:#636363">Export path. Plugin has a predefined path for specific project.</span><br />
+<ins>Create Diffuse Layers: </ins><span style="color:#636363">Creates new Paint Layers and Layer Groups specific for Diffuse texture and fills them with black colour.</span><br />
+<ins>Create Mask Layers: </ins><span style="color:#636363">Creates new Paint Layers and Layer Groups specific for Mask texture and fills them with black colour.</span><br />
+<ins>Create Detail Mask Layers: </ins><span style="color:#636363">Creates new Paint Layers and Layer Groups specific for Detail mask texture and fills them with black colour.</span><br />
+<ins>Export Diffuse: </ins><span style="color:#636363">Exports texture as Diffuse texture. If ALPHA Layer Group is kept, it’s exported with Alpha channel, otherwise Alpha channel is ignored.</span><br />
+<ins>Export Mask: </ins><span style="color:#636363">Export texture as Mask texture.
+R - Metalness, 
+G - Occlusion, 
+B - Mask for detail map, 
+A - Smoothness</span><br />
+<ins>Export Detail Mask: </ins><span style="color:#636363">Export texture as Detail mask texture.
+R - Desaturate albedo, 
+G - Smoothness, 
+B - Detail normal mask</span><br /></p>
+
+<hr />
+
+<p>Link to repository: <a href="https://github.com/michal-lopasovsky/Unity3d-juniper/tree/main/krita_exporter/pykrita">GitHub Link</a>.</p>
+
+<hr />
+
+</div>
+
+
+    <!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
+
+<script>
+  $('.ui.embed').embed();
+</script>
+
+
+  </body>
+
+</html>
