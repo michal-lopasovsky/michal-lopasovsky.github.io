@@ -21,7 +21,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
 
-      - name: Validate bio.json file
+      - name: validate-bio-json-file
         uses: limitusus/json-syntax-check@v1
 
         with:
